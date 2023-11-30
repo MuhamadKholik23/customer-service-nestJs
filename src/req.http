@@ -1,0 +1,43 @@
+###
+# POST untuk membuat customer baru
+###
+
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+  "nama": "Muhamad",
+  "kota": "Garut",
+  "alamat": "Kp.Cik"
+}
+
+###
+
+# GET untuk mendapatkan semua customers
+
+GET http://localhost:3000/customers
+
+###
+
+# GET untuk mendapatkan customer berdasarkan ID
+
+GET http://localhost:3000/customers/2
+
+###
+
+# PUT untuk memperbarui customer
+
+PUT http://localhost:3000/customers/13
+Content-Type: application/json
+
+{
+  "nama": "Muhamad Kholik Nur",
+  "kota": "Garut",
+  "alamat": "Kp.Cikawung"
+}
+
+###
+
+# DELETE untuk menghapus customer
+
+DELETE http://localhost:3000/customers/13
